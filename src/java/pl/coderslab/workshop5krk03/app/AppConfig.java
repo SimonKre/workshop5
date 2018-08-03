@@ -1,4 +1,4 @@
-package pl.coderslab.spring02mvc.app;
+package pl.coderslab.workshop5krk03.app;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = {"pl.coderslab.spring02mvc.beans", "pl.coderslab.spring02mvc.controller"})
+@ComponentScan(basePackages = {"pl.coderslab.workshop5krk03"})
 @EnableWebMvc
 public class AppConfig extends WebMvcConfigurerAdapter {
     @Bean

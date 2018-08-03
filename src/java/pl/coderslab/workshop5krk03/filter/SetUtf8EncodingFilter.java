@@ -1,4 +1,4 @@
-package pl.coderslab.filter;
+package pl.coderslab.workshop5krk03.filter;
 
 import javax.servlet.*;
 import java.io.IOException;
