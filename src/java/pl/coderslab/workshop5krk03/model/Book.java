@@ -1,6 +1,8 @@
 package pl.coderslab.workshop5krk03.model;
 
 
+import java.util.Objects;
+
 public class Book {
 
     private long id;
@@ -68,5 +70,30 @@ public class Book {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+        Book book = (Book) o;
+        return id == book.id;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, isbn, title, author, publisher, type);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", isbn='" + isbn + '\'' +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", type='" + type + '\'' +
+                '}';
     }
 }
